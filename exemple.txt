@@ -1,0 +1,56 @@
+IDENTIFICATION DIVISION.
+PROGRAM-ID.Algorithem
+
+DATA DIVISION.
+WORKING-STORAGE SECTION.
+     
+     #declaration idf simple!
+     Z|R FLOAT.
+      C STRING.
+      E|L INTEGER .
+      X CHAR.
+
+     #declaration idf_tab!
+      R1 LINE 1 , SIZE 9 FLOAT.
+      C1 LINE 1 , SIZE 9 STRING.
+      E1 LINE 1 , SIZE 5 INTEGER.
+
+     # dec constante non affecter!
+        CONST  R2 FLOAT.
+        CONST  E2 INTEGER.
+        CONST  C2 STRING.
+        
+     # dec constante affecter!
+     CONST  C3 ="acad C".
+     CONST  R3 =3,5.
+     CONST  E3=15.
+     CONST  M='!'.
+     CONST  A=(-18).
+     CONST  B=(-0,15).
+PROCEDURE DIVISION.
+    
+           E=2*2+(-14).
+           R2=13,23+13,2+22-5.
+         
+               MOVE 5 TO 10 
+                 
+               END
+               
+               IF(E.EQ.5 OR E.G.10,13):
+
+                 ACCEPT("%":@R).
+                 DISPLAY ("la valeur de x est &":@X).
+
+               END
+
+
+               IF(E.EQ.5):
+                    MOVE 5 TO E
+                       L=5*5-(7+2)/13.
+                    END
+               END
+               ELSE
+                    DISPLAY ("la valeure de E est defrent de 5").
+               END
+                
+STOP RUN
